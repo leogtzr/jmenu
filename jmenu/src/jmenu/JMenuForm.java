@@ -147,7 +147,6 @@ public class JMenuForm extends javax.swing.JFrame {
             case KeyEvent.VK_ENTER:
                 System.out.print(listOcurrences.getSelectedValue().toString());
                 System.exit(0);
-                break;
                 
             case KeyEvent.VK_ESCAPE:
                 System.exit(0);
@@ -190,9 +189,7 @@ public class JMenuForm extends javax.swing.JFrame {
         }
         //</editor-fold>
 
-        if(args != null && args.length > 0) {
-            title = args[0];
-        }
+        title = (args != null && args.length > 0) ? args[0] : "";
         
         try {
             try (BufferedReader br = new BufferedReader(new InputStreamReader(System.in))) {
