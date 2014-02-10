@@ -11,3 +11,4 @@ How to use:
 	$ chmod +x jmenu.jar 
 	$ ls -1 | ./jmenu.jar
 
+

@@ -22,6 +22,7 @@ public class JMenuForm extends javax.swing.JFrame {
     }
 
     public JMenuForm() {
+        setUndecorated(true);
         initComponents();
         fillListSearch();
         lblCount.setText("");
